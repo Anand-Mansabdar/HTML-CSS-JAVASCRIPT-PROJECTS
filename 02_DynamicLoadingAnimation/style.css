@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #131321cb;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper .loader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2px;
+}
+
+/* Creating circles */
+.loader .loading{
+    background: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3rem;
+    margin: 0 0.8rem;
+    animation: load 0.8s ease infinite;
+}
+
+.loader .loading.one{
+    animation-delay: 0.2s;
+}
+
+.loader .loading.two{
+    animation-delay: 0.40s;
+}
+
+.loader .loading.three{
+    animation-delay: 0.6s;
+}
+
+.loader .loading.four{
+    animation-delay: 0.8s;
+}
+
+@keyframes load{
+    0%{
+        width: 1.5rem;
+        height: 1.5rem;
+    } 50%{
+        width: 1rem;
+        height: 1rem;
+    }
+}
