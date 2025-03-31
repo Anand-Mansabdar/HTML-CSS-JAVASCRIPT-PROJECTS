@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: lightgray;
+    height: 100rem;
+}
+
+.card{
+    width: 40rem;
+    background-color: azure;
+    padding: 1.3rem;
+    margin: 1.3rem;
+    line-height: 2rem;
+    border-radius: 2rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background-color: darkgrey; */
+    border-radius: 3rem;
+    height: 4rem;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
